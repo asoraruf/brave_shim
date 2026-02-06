@@ -31,7 +31,7 @@ Create an isolated environment and install the required packages:
 cd /opt/brave_shim
 python3 -m venv venv
 source venv/bin/activate
-pip install fastapi uvicorn duckduckgo_search pyyaml
+pip install fastapi uvicorn ddgs pyyaml
 
 ```
 
