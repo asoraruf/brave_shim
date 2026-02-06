@@ -1,0 +1,14 @@
+[Unit]
+Description=Brave Search API Shim for OpenClaw (DuckDuckGo)
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/opt/brave_shim
+ExecStart=/opt/brave_shim/venv/bin/uvicorn brave_shim:app
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+

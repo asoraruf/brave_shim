@@ -1,0 +1,10 @@
+/opt/brave_shim/log/brave_shim.log {
+    daily
+    missingok
+    rotate 7
+    compress
+    delaycompress
+    notifempty
+    copytruncate
+    create 0640 root root
+}
